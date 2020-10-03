@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+
+<body>
+    <div id="container">
+        <ul id="myList">
+            <li id="first" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Totam, voluptatem maxime?</li>
+            <li class="item">Tenetur, aliquid necessitatibus.</li>
+            <li class="item">Repellendus, minus doloribus.</li>
+            <li class="item">Quibusdam, expedita architecto.</li>
+        </ul>
+        <button id="addNew">Add New Item</button>
+    </div>
+</body>
+
+<script>
+    // Why bubbling , why man why. Benefit of event bubbling
+
+    // var items = document.getElementsByClassName('item');
+    // for (let i = 0; i < items.length; i++) {
+    //     var item = items[i];
+    //     item.addEventListener('click', function (event) {
+    //         event.target.parentNode.removeChild(event.target);
+    //         // console.log(this);
+    //         // console.log(event.target);
+    //     });
+    // }
+
+    document.getElementById('addNew').addEventListener('click', function (event) {
+        var itemParent = document.getElementById('myList'); // parent k pelam. 
+        var newItem = document.createElement('li');
+        newItem.innerText = 'Brand new text';
+        itemParent.appendChild(newItem);
+    });
+
+    document.getElementById('myList').addEventListener('click', function (event) {
+        // console.log('this', this);
+        // console.log('target', event.target);
+        event.target.parentNode.removeChild(event.target);
+    })
+
+
+
+
+    // How bubble works section. 
+    // document.getElementById('first').addEventListener('click', function (event) {
+    //     console.log('first li clicked');
+    //     event.stopPropagation();
+    //     // event.stopImmediatePropagation();
+    //     //console.log(event);
+    // })
+    // document.getElementById('container').addEventListener('click', function (event) {
+    //     console.log('container clicked');
+    //     //console.log(event);
+    // })
+    // document.getElementById('myList').addEventListener('click', function (event) {
+    //     console.log('UL clicked');
+    //     //console.log(event);
+    // })
+
+
+
+
+
+
+</script>
+
+</html>

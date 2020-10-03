@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <h1>Exploring Events</h1>
+    <button>click-1</button>
+    <button id="second">click-2</button>
+    <button id="third">click-3</button>
+</body>
+<script>
+
+    // System - 1
+
+    // const secondButton = document.getElementById('second');
+    // secondButton.onclick = function() {
+    //     console.log('second button clicked')
+    // }
+
+    // System - 2
+
+    // function handleClick() {
+    //     document.body.style.backgroundColor = 'green';
+    // }
+    // const secondButton = document.getElementById('second');
+    // secondButton.onclick = handleClick;
+
+    // System - 3
+
+    function handleClick() {
+        document.body.style.backgroundColor = 'tomato';
+    }
+
+    const secondButton = document.getElementById('second');
+    secondButton.addEventListener('click', handleClick);
+
+    // Way - 4 using anonymus function. 
+    document.getElementById('third').addEventListener('click', function () {
+        document.body.style.backgroundColor = 'cyan';
+    });
+
+</script>
+
+</html>
