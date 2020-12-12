@@ -27,7 +27,6 @@ function addFive(x, addReference) {
 }
 
 // fn 2
-
 function higherOrderFunction(x, callback) {
     return callback(5, x);
 }
@@ -86,7 +85,7 @@ thirdPartyLib(criticalFuntion);
 // But how do we solve this problem actually ? Here comse Promises to play. Let's learn about promises. 
 
 // A story first. Suppose, we're friends go in a resturant for lunch. But the resturant is too busy.So instead of sitting there for free the table, they say that,
-// we can give our number and they promise us that, 
+// we can give our numbers and they promise us that, 
 // they will text us, when any table is empty. But here is a problem, they can break their promise. Or in another way, they have all the control, they can text or not, 
 // they will never text us and many more. And same for the callback function and third party scenario. They have all the control.
 // But instead of giving them our number, resturant share a buzzer with us. This is the solution actually. And this is how, we can overcome the problem of inversion of control. 
@@ -101,7 +100,7 @@ thirdPartyLib(criticalFuntion);
 
 // Here are some questions
 // 1. How do I create a Promise?
-// 2. HOw do I change the status of a promise?
+// 2. How do I change the status of a promise?
 // 3. How do I listen the status of a promise changes?
 
 // sol 1 
