@@ -1,3 +1,38 @@
+# Closure
+
+- Below function is working perfectly.
+
+```js
+var sum = function (num1, num2) {
+    return num1 + num2;
+}
+
+console.log(sum(2, 3));
+```
+
+- Below function will work perfectly, cause child scope has access to parent scope. But how things happen internally? Answer is "Closure"
+
+```js
+var num1 = 2;
+var num2 = 3;
+
+var sum = function () {
+    return num1 + num2;
+}
+
+console.log(sum());
+```
+
+But if we did like this
+
+```js
+
+console.dir(sum);
+```
+
+It will return something like that.
+
+
 // function first() {
 //     var greet = 'HI';
 //     function second() {
