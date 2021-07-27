@@ -30,7 +30,9 @@ But if we did like this
 console.dir(sum);
 ```
 
-It will return something like that.
+It will return something like this.
+
+![Closure-Scope](images/closure?raw=true "Service to Service Architecture")
 
 
 // function first() {
