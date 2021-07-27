@@ -32,7 +32,7 @@ console.dir(sum);
 
 It will return something like this.
 
-![Closure-Scope](./images/closure.png?raw=true "Service to Service Architecture")
+![Closure-Scope](../images/closure.png?raw=true "Service to Service Architecture")
 
 
 // function first() {
