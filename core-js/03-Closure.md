@@ -114,13 +114,6 @@ console.dir(sum);
 
 
 
-
-
-
-
-
-
-
 // function first() {
 //     var greet = 'HI';
 //     function second() {
