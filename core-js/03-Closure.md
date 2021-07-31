@@ -109,11 +109,6 @@ console.dir(sum);
 - Here, instead of clouse, script comes. Reason is simple, let is blocked scope, var is function scope. let will not stay in Global function or scope. That's it.
 
 
-
-
-
-
-
 // function first() {
 //     var greet = 'HI';
 //     function second() {
@@ -144,7 +139,4 @@ newFunc();
 
 // A function ran, the function excuted, it's never gonna executed agian
 // BUT it's going remember that there are references to that variables. So child
-// scope always has access to the parent's scope. 
-
-// But parent's scope don't have access to child scope.
-
+// scope always has access to the parent's scope.
